@@ -1,0 +1,37 @@
+<html>
+<head>
+	<link rel="stylesheet" href="../lib/qunit/qunit/qunit.css"></link>
+	<script type="text/javascript" src="../lib/qunit/qunit/qunit.js"></script>
+	<script type="text/javascript">
+
+	sumar = function(a, b){
+		
+		var isNumeric = function(obj){
+			if(obj - parseFloat( obj ) >= 0) return true;
+			return false;
+		};
+		
+		if(!isNumeric(a)) throw new Error();
+		if(!isNumeric(b)) throw new Error();
+		
+		return a + b;
+	};
+	
+	test("primer test", function(){
+		var valor1 = "r";
+		var valor2 = 3;
+
+		//qunit permite verificar que una excepción sea lanzada bajo cierta circunstancia
+		throws(function(){
+			var resultado = sumar(valor1, valor2);
+		});
+
+	});
+	
+	</script>
+</head>
+<body>
+	<div id="qunit"></div>
+</body>
+
+</html>
