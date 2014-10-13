@@ -1,0 +1,43 @@
+<html>
+<head>
+	<link rel="stylesheet" href="../lib/qunit/qunit/qunit.css"></link>
+	<script type="text/javascript" src="../lib/qunit/qunit/qunit.js"></script>
+	<script type="text/javascript" src="calculadora.js"></script>
+	<script type="text/javascript">
+		module("suma");
+	
+		test("suma simple", function(){
+			var a = 2;
+			var b = 5;
+						
+			var resultado = Calculadora.sumar(a, b);
+			
+			equal(resultado, 7);
+		});
+
+		test("suma con negativos", function(){
+			var a = -2;
+			var b = 5;
+						
+			var resultado = Calculadora.sumar(a, b);
+			
+			equal(resultado, 3);
+		});
+		
+		module("resta");
+	
+		test("resta simple", function(){
+			var a = 2;
+			var b = 5;
+						
+			var resultado = Calculadora.restar(a, b);
+			
+			equal(resultado, -3);
+		});		
+	</script>
+</head>
+<body>
+	<div id="qunit"></div>
+</body>
+
+</html>
