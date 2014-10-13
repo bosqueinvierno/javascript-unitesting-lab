@@ -1,4 +1,4 @@
 {	
 	"name": "js-unitesting-lab",
-	"dependencies": {"qunit": "1.15.0"}
+	"dependencies": {"qunit": "1.15.0", "blanket": "1.1.5"}
 }
