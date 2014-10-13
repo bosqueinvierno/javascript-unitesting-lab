@@ -1,10 +1,10 @@
 <html>
 <head>
 	<link rel="stylesheet" href="../lib/qunit/qunit/qunit.css"></link>
+	<script type="text/javascript" src="calculadora.js" data-cover></script>
 	<script type="text/javascript" src="../lib/qunit/qunit/qunit.js"></script>
-	<script type="text/javascript" src="calculadora.js"></script>
+	<script type="text/javascript" src="../lib/blanket/dist/qunit/blanket.js"></script>
 	<script type="text/javascript">
-		//indicamos que a partir de acá comienza un nuevo móudlo
 		module("suma");
 	
 		test("suma simple", function(){
@@ -25,7 +25,6 @@
 			equal(resultado, 3);
 		});
 		
-		//ahora comienza otro
 		module("resta");
 	
 		test("resta simple", function(){
