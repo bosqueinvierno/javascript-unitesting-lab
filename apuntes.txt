@@ -16,42 +16,27 @@ Requerimiento => desarrollo => despligue para prueba => prueba => ajustes (corre
 El tiempo de despliegue para dejar la aplicación lista para ser probada comienza a ser un limitante en nuestra velocidad.
 También los cambios van haciendo cada vez más complejo tener un buen conjunto de pruebas para validar nuestra aplicación.
 
-Arquitectura emergente
+Si el equipo es más grande que pequeño poder detectar problemas con commits de código recientes es muy valioso 
+para poder "fallar rápido"
+
+La falsa sensación de avance cuando no hemos integrado es muy peligrosa. 
+
+Si trabajamos en este tipo de escenarios o similares con arquitecturas emergentes y muchos procesos de despliegue, una
+muy buena forma de mantener nuestro proyecto sano es liberar versiones de prueba lo antes posible,
+entonces necesitamos tener automatizado el despligue (para evitar el costo asociado)
+para poder asegurar que construimos sobre código sólido necesitamos tener:
+pruebas unitarias
+pruebas de aceptación
+
+En particular vamos a ver cómo lograr automatizar pruebas unitarias en Javascript y nombraremos un poco
+cómo hacerlo con pruebas de aceptación.
 
 
 
-probar que cierre el circuito en CI
-
-confirmar que el package incluye 
-
-ver json de libero2
 
 
 
-Javascript se ha convertido en un lenguaje muy importante
 
-
-Muchas veces escapa a las buenas prácticas de desarrollo
-
-Es cierto que hoy en día se desarrollan gigantezcas aplicaciones totalmente en Javascript
-
-Siempre necesitamos asegurar la calidad de nuestras aplicaciones
-
-Debido a diferentes motivos utilizamos ciclos de desarrollo cortos e iterativos
-
-Es importante contar con un conjunto de test que validen al menos los puntos más importates de nuestro sistema
-
-Esto nos permite cambiar y poder validar lo que ya hicimos
-
-Cambiar rápido y seguro
-
-Detectar errores tempranamente
-
-
-no contaba con un conjunto
-
-
-la importancia de los test automatizados
 
 
 
@@ -75,14 +60,15 @@ qunit
 framework de jquery
 todo jquery está testeado con qunit
 no depende de jquery
+está desarrollado de cero para testear Javascript
 
-coverage
+coverage (blanket)
+
+Es importante la covertura?
 
 phantomjs
 
 implementación de webkit standalone
-
 cómo correr los test de qunit en webkit
-
 script de automatización y despliegue
 
