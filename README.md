@@ -14,15 +14,13 @@ Es un framework para unit testing en Javascript, desarrollado por la gente de jQ
 
 Para utilizar los ejemplos son necesarias algunas herramientas, en particular yo utilizo Notepad++ como editor. Más allá de esto vamos a necesitar:
 
-Tortoise GIT (poner link)
+*Tortoise GIT (poner link)
 
-Nodejs (poner link)
+*Nodejs (poner link)
 
-PhantomJs (poner link) y colocarlo en el PATH (en Windows)
+*PhantomJs (poner link) y colocarlo en el PATH (en Windows)
 
-Instalar el paquete de Nodejs UglifyJS2
-
-npm install uglify-js -g
+*Instalar el paquete de Nodejs UglifyJS2 ´npm install uglify-js -g´
 
 
 
