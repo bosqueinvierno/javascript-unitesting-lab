@@ -20,7 +20,20 @@ Para utilizar los ejemplos son necesarias algunas herramientas, en particular yo
 
 *PhantomJs (poner link) y colocarlo en el PATH (en Windows)
 
-*Instalar el paquete de Nodejs UglifyJS2 ´npm install uglify-js -g´
+*Instalar el paquete de Nodejs UglifyJS2 `npm install uglify-js -g`
+
+##Ejemplos
+
+1. [Ejemplo1](https://github.com/leomicheloni/javascript-unitesting-lab/blob/master/ejemplos/ejemplo1.html). Cargar Qunit en el navegador.
+2. [Ejemplo2](https://github.com/leomicheloni/javascript-unitesting-lab/blob/master/ejemplos/ejemplo2.html). Test simple, sin código bajo prueba.
+3. [Ejemplo3](https://github.com/leomicheloni/javascript-unitesting-lab/blob/master/ejemplos/ejemplo3.html). Test simple, validando un resultado.
+4. [Ejemplo4](https://github.com/leomicheloni/javascript-unitesting-lab/blob/master/ejemplos/ejemplo4.html). Utilizando equal para comparar un resultado con un valor esperado.
+5. [Ejemplo5](https://github.com/leomicheloni/javascript-unitesting-lab/blob/master/ejemplos/ejemplo5.html). Agregar un mensaje para que se muestre en caso de error.
+6. [Ejemplo6](https://github.com/leomicheloni/javascript-unitesting-lab/blob/master/ejemplos/ejemplo6.html). Ejemplo de notEqual.
+7. [Ejemplo7](https://github.com/leomicheloni/javascript-unitesting-lab/blob/master/ejemplos/ejemplo7.html). Ejemplo de manipular una excepción esperada.
+8. [Ejemplo8](https://github.com/leomicheloni/javascript-unitesting-lab/blob/master/ejemplos/ejemplo8.html). Uso de módulos.
+9. [Ejemplo9](https://github.com/leomicheloni/javascript-unitesting-lab/blob/master/ejemplos/ejemplo9.html). Utilizar Blanket para Code coverage.
+10. 
 
 
 
