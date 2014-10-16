@@ -1,0 +1,88 @@
+Javascript se ha convertido en un lenguaje muy importante a causa del desarrollo de los sitios web actuales
+
+Sin embargo debido a diferentes motivos no cuenta con un conjunto de buenas herramientas.
+Lo que ha ido pasando es que se fueron generando herramientras a partir de la aparición de necesidades.
+Un ejemplo es jQuery, en realidad todo lo que hacemos con él se puede hacer "a mano" pero soluciona algunos
+problemas repetitivos y que en otras plataformas son más sencillos, como iterar un array.
+También hay cosas como BackboneJs que solucionan problemas de arquitectura y de organización del código, en 
+lenguajes como .net tenemos una plataforma "oficial" como podría ser ASP.NET MVC, en Javascript esto no ocurre.
+
+A medida que las aplicaciones se fueron haciendo más y más complejas y los procesos de desarrollo se hacen más cortos.
+Porque los requermientos cambian rápido o no están del todo claro, o se van definiendo sobre la marcha.
+El ciclo:
+
+Requerimiento => desarrollo => despligue para prueba => prueba => ajustes (correcciones, cambios, etc) => comenzar de nuevo
+
+El tiempo de despliegue para dejar la aplicación lista para ser probada comienza a ser un limitante en nuestra velocidad.
+También los cambios van haciendo cada vez más complejo tener un buen conjunto de pruebas para validar nuestra aplicación.
+
+Arquitectura emergente
+
+
+
+probar que cierre el circuito en CI
+
+confirmar que el package incluye 
+
+ver json de libero2
+
+
+
+Javascript se ha convertido en un lenguaje muy importante
+
+
+Muchas veces escapa a las buenas prácticas de desarrollo
+
+Es cierto que hoy en día se desarrollan gigantezcas aplicaciones totalmente en Javascript
+
+Siempre necesitamos asegurar la calidad de nuestras aplicaciones
+
+Debido a diferentes motivos utilizamos ciclos de desarrollo cortos e iterativos
+
+Es importante contar con un conjunto de test que validen al menos los puntos más importates de nuestro sistema
+
+Esto nos permite cambiar y poder validar lo que ya hicimos
+
+Cambiar rápido y seguro
+
+Detectar errores tempranamente
+
+
+no contaba con un conjunto
+
+
+la importancia de los test automatizados
+
+
+
+la importancia de los ciclos cortos de desarrollo / despligue
+la necesidad de que eso no sea una carga de trabajo extra
+
+ejemplo de integración continua => moficiar correr test
+
+
+
+el ciclo => requrimientos
+priorización => sprint => desplique => prueba
+siempre lo último en CI
+integración continua
+cómo sabemos que nuestros últimos cambios no rompieron lo que ya había
+cómo sabemos que podemos cambiar algo que funcionaba y no romper un componente que depende de él
+
+
+qunit
+
+framework de jquery
+todo jquery está testeado con qunit
+no depende de jquery
+
+coverage
+
+phantomjs
+
+implementación de webkit standalone
+
+cómo correr los test de qunit en webkit
+
+script de automatización y despliegue
+
