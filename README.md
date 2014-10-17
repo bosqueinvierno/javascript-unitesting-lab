@@ -33,8 +33,8 @@ Para utilizar los ejemplos son necesarias algunas herramientas, en particular yo
 7. [Ejemplo7](https://github.com/leomicheloni/javascript-unitesting-lab/blob/master/ejemplos/ejemplo7.html). Ejemplo de manipular una excepción esperada.
 8. [Ejemplo8](https://github.com/leomicheloni/javascript-unitesting-lab/blob/master/ejemplos/ejemplo8.html). Uso de módulos.
 9. [Ejemplo9](https://github.com/leomicheloni/javascript-unitesting-lab/blob/master/ejemplos/ejemplo9.html). Utilizar Blanket para Code coverage.
-10.[Ejemplo10](https://github.com/leomicheloni/javascript-unitesting-lab/blob/master/ejemplos/ejemplo10.js). Primer ejemplo de PhantomJs, cargar una página y leer el contenido de un elemento.
-11.[Ejemplo11](https://github.com/leomicheloni/javascript-unitesting-lab/blob/master/ejemplos/ejemplo11.js). Ejecutar los test de Qunit y obtener el resultado en consola.
+10. [Ejemplo10](https://github.com/leomicheloni/javascript-unitesting-lab/blob/master/ejemplos/ejemplo10.js). Primer ejemplo de PhantomJs, cargar una página y leer el contenido de un elemento.
+11. [Ejemplo11](https://github.com/leomicheloni/javascript-unitesting-lab/blob/master/ejemplos/ejemplo11.js). Ejecutar los test de Qunit y obtener el resultado en consola.
 
 
 
