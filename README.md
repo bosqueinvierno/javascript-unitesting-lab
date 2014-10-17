@@ -35,6 +35,9 @@ Para utilizar los ejemplos son necesarias algunas herramientas, en particular yo
 9. [Ejemplo9](https://github.com/leomicheloni/javascript-unitesting-lab/blob/master/ejemplos/ejemplo9.html). Utilizar Blanket para Code coverage.
 10. [Ejemplo10](https://github.com/leomicheloni/javascript-unitesting-lab/blob/master/ejemplos/ejemplo10.js). Primer ejemplo de PhantomJs, cargar una página y leer el contenido de un elemento.
 11. [Ejemplo11](https://github.com/leomicheloni/javascript-unitesting-lab/blob/master/ejemplos/ejemplo11.js). Ejecutar los test de Qunit y obtener el resultado en consola.
+12. [Ejemplo12](https://github.com/leomicheloni/javascript-unitesting-lab/blob/master/ejemplos/ejemplo12.js). Integrar el script con el proceso de build.
+13. [Ejemplo13](https://github.com/leomicheloni/javascript-unitesting-lab/blob/master/ejemplos/ejemplo13.js). Ejecutar los test y obtener la covertura de código.
+14. [Ejemplo14](https://github.com/leomicheloni/javascript-unitesting-lab/blob/master/ejemplos/ejemplo14.js). Integrar en el script de build el testing y la covertura de código.
 
 
 
