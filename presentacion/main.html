@@ -15,9 +15,23 @@
         <!-- Syntax highlighting core file  -->
         <script type="text/javascript" src="highlighter/shCore.js"></script>
         <!-- Syntax highlighting brushes, remove those you don't need -->
+        <script type="text/javascript" src="highlighter/shBrushBash.js"></script>
+        <script type="text/javascript" src="highlighter/shBrushCpp.js"></script>
+        <script type="text/javascript" src="highlighter/shBrushCSharp.js"></script>
         <script type="text/javascript" src="highlighter/shBrushCss.js"></script>
+        <script type="text/javascript" src="highlighter/shBrushDelphi.js"></script>
+        <script type="text/javascript" src="highlighter/shBrushDiff.js"></script>
+        <script type="text/javascript" src="highlighter/shBrushGroovy.js"></script>
+        <script type="text/javascript" src="highlighter/shBrushJava.js"></script>
         <script type="text/javascript" src="highlighter/shBrushJScript.js"></script>
+        <script type="text/javascript" src="highlighter/shBrushPhp.js"></script>
         <script type="text/javascript" src="highlighter/shBrushPlain.js"></script>
+        <script type="text/javascript" src="highlighter/shBrushPython.js"></script>
+        <script type="text/javascript" src="highlighter/shBrushRuby.js"></script>
+        <script type="text/javascript" src="highlighter/shBrushScala.js"></script>
+        <script type="text/javascript" src="highlighter/shBrushSql.js"></script>
+        <script type="text/javascript" src="highlighter/shBrushVb.js"></script>
+        <script type="text/javascript" src="highlighter/shBrushXml.js"></script>
         <!-- Syntax highlighting styles-->
         <link type="text/css" rel="stylesheet" href="highlighter/shCore.css"/>
         <link type="text/css" rel="stylesheet" href="highlighter/shThemeEclipse.css"/>
@@ -50,7 +64,7 @@
         </style>
     </head>
     <body>
-        <div class="slide">
+		<div class="slide">
             <br/>
 			<br/><br/><br/><br/><br/>
 			<h1>Pruebas unitarias automatizadas en Javascript</h1>
@@ -62,42 +76,80 @@
 			<h1>Acerca de mí:</h1>
             <div >
 				<ul style="list-style-type: none">
-				<li><br/></li>				<li><a href="http://twitter.com/leomicheloni">Leonardo Micheloni</a></li>
-
+				<li><br/></li>
+				<li><a href="http://www.leonardomicheloni.com">Leonardo Micheloni</a></li>
 				<li><br/></li>
 				<li><a href="http://twitter.com/leomicheloni">@leomicheloni</a></li>
 				<li><br/></li>
 				<li><a href="http://kinetica-solutions.com">Kinetica Solutions</a></li>
+				<li><br/></li>
+				<li><a href="https://github.com/leomicheloni">Git Hub</a></li>
 				</ul>
 
             </div>
         </div>
-<!--
-        <div class="slide" data-layout="alt">
-            <h1>Layouts</h1>
-            <h2>This slide uses the "alt" layout</h2>
-            <p>It inherits the class "nofooter" of the layout, which allows you to style it differently, and it doesn't have the footer div that the default layout has for example</p>
-            <p>By default, all slides use the default layout if it's present</p>
-            <p>Layouts must have a &lt;content&gt;&lt;/content&gt; tag that will be replaced by each slide's content</p>
-            <pre class="brush: html">
-                <div class="slide" data-layout="alt">
-                    Foo
-                </div>
 
-                <div class="layout" data-name="default">
-                    <h1>Some title</h1>
-                    <content></content>
-                    <div class="footer">
-                        Footer content
-                    </div>
-                </div>
-
-                <div class="layout nofooter" data-name="alt">
-                    <content></content>
-                </div>
-            </pre>
+        <div class="slide">
+			<h1>Aplicaciones modernas</h1>
+			
+			<p><br /></p>
+			<p>Se fueron haciendo cada vez más complejas</p>
+			<p>Los requirimientos cambiand rápido o no siempre están del todo definidos</p>
+			<p>Necesitamos ciclos de desarrollo cortos y buena respuesta al cambio</p>
+			<p>Arquitectura emergente</p>
         </div>
 
+        <div class="slide">
+			<h1>El ciclo de desarrollo</h1>			
+			<p><br /></p>
+			<img class="hcenter" src="img/cicle.png" alt="" />
+		</div>
+
+        <div class="slide">
+            <h1>Calidad</h1>
+			<h2>Nuevas necesidades</h2>
+            <p></p>
+			<p>Asegurar la calidad y la integridad</p>
+			<p>Responder rápidamente a los cambios</p>
+			<p>Fallar rápido</p>
+        </div>
+
+        <div class="slide">
+			<h1>¿Qué hacemos en estos casos?</h1>
+            <p></p>
+			<p>Test Unitarios</p>
+			<p>Integración continua</p>
+			<p>Despliegue continuo</p>
+        </div>
+
+        <div class="slide">
+            <h1>Javascript</h1>
+			<h2>Un poco de contexto</h2>
+			<p><br /></p>
+			<p>En los útimos años se ha convertido en un lenguaje muy importante</p>
+			<p>Sin embargo debido a diferentes motivos no cuenta con un conjunto de buenas herramientas "out of the box"</p>
+            <p>Lo que ha ido pasando es que se fueron generando herramientras a partir de la aparición de necesidades.</p>
+        </div>
+
+        <div class="slide">
+            <h1>Javascript</h1>
+			<h2>Herramientas</h2>
+			<p><br /></p>
+			<ul>
+			<li>Qunit</li>
+			<li>Blanket</li>
+			<li>Phantom</li>
+			<li>Nodejs</li>
+			
+			</ul>
+        </div>
+
+        <div class="slide">
+		<div class="vcenter">
+		<h1 class="hcenter">Empecemos</h1>
+		</div>
+        </div>
+<!--
         <div class="slide">
             <h1>Syntax Highlighting</h1>
             <p>Code is just pre tags with class="brush: &lt;language&gt;"</p>

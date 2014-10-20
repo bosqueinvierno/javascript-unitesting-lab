@@ -11,12 +11,17 @@
  */
 /** Core */
 html, body {
-    background: #000;
+    background: #a0a0a0;
     color: #fff;
+	font-size: 2em;
+}
+
+p{
+	font-size: 1.4em;
 }
 
 body {
-    font-family: Tahoma, Verdana, sans-serif;
+	font-family: Segoe UI, Helvetica, Tahoma, Verdana, sans-serif;
 }
 
 a, a:link, a:active, a:visited {
@@ -31,11 +36,11 @@ a.eval {
 }
 
 .slide {
-    -moz-border-radius: 2em 0;
-    -webkit-border-radius: 2em 0;
-    border-radius: 2em 0;
-    border: .1em solid #ccc;
-    background: #242f53;
+    -moz-border-radius: 2em;
+    -webkit-border-radius: 2em;
+    border-radius: 2em;
+    
+    background: #a7a000;
 }
 
 /** Overview screen */
@@ -50,17 +55,15 @@ a.eval {
 
 /** Footer */
 .footer {
-    -moz-border-radius: .8em 0 2em;
-    -webkit-border-radius: .8em 0 2em;
-    border-radius: .8em 0 2em;
-    border-top: .1em solid #ccc;
+	border-radius:0 0 2em 2em ;
+    
     border-left: .1em solid #ccc;
     left: -.1em;
     text-align: center;
     background: #1b233f;
 }
 .footerContent {
-    font-size: .85em;
+    font-size: 1.85em;
     padding: .5em 1em;
 }
 .footer span {
@@ -69,12 +72,12 @@ a.eval {
 
 /** Specific element styling */
 .slide.big .slideContent > *:not(.footer) {
-    font-size: 1.7em;
+    font-size: 2.7em;
 }
 
 h1, h2, h3, h4 {
     margin: 0 0 .5em;
-    font-size: 1.5em;
+    font-size: 2.3em;
     font-weight: bold;
 }
 
@@ -89,21 +92,21 @@ h1 {
 
 h2 {
     margin-bottom: .25em;
-    font-size: 1.4em;
+    font-size: 1.6em;
 }
 
 h3 {
     margin-bottom: .25em;
-    font-size: 1.2em;
+    font-size: 2.2em;
 }
 
 h4 {
     margin-bottom: .25em;
-    font-size: 1.1em;
+    font-size: 2.1em;
 }
 
 li {
-    font-size: 1.2em;
+    font-size: 2.2em;
 }
 
 p {
@@ -121,7 +124,7 @@ ol {
 
 /** References links */
 a[rel=src] {
-    font-size: .6em;
+    font-size: 1.6em;
 }
 a[rel=src]:before {
     content: "ref:";
