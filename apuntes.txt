@@ -1,3 +1,66 @@
+#Prueba unitarias automatizadas en Javascript:
+
+Agradecimientos
+vamos a ver código funcionado con ejemplos, la parte de slides va a ser corta
+
+#Acerca de mí:
+
+Desarrollador
+comunidad
+MUG
+Alt.net
+Agiles
+
+github => bajar ejemplos
+
+#aplicaciones modernas
+
+A medida que las aplicaciones se fueron haciendo más y más complejas y los procesos de desarrollo se hacen más cortos.
+
+Porque los requermientos cambian rápido o no están del todo claro, o se van definiendo sobre la marcha.
+
+Las metodologías ágiles de desarrollo hacen incapié en aspectos relacionados con el proceso, en este caso vamos a intentar
+hablar un poco acerca de una de prácticas que nos permiten soportar tales tipos de procesos.
+Podemos hablar de SCRUM incluso de Kanban.
+
+#El ciclo
+
+Requerimiento => desarrollo (sprint corto, tal vez un día, tal vez horas) => despligue para prueba => prueba => ajustes (correcciones, cambios, etc) => comenzar de nuevo (tal vez nuevas prioridades)
+
+El tiempo de despliegue para dejar la aplicación lista para ser probada comienza a ser un limitante en nuestra velocidad.
+
+También los cambios van haciendo cada vez más complejo tener un buen conjunto de pruebas para validar nuestra aplicación.
+
+Si el equipo es más grande que pequeño poder detectar problemas con commits de código recientes es muy valioso para poder "fallar rápido"
+
+La falsa sensación de avance cuando no hemos integrado es muy peligrosa. 
+
+
+#calidad
+
+Si trabajamos en este tipo de escenarios o similares con arquitecturas emergentes y muchos ciclos de despliegue, una muy buena forma de mantener nuestro proyecto sano es liberar versiones de prueba lo antes posible.
+
+entendemos como calidad aquello que satisface al cliente, lo que cumple con el criterio de done y de éxito.
+
+
+#Qué hacemos en estos caso
+
+cómo sabemos que nuestros últimos cambios no rompieron lo que ya había
+cómo sabemos que podemos cambiar algo que funcionaba y no romper un componente que depende de él
+
+Entonces necesitamos tener automatizado el despligue (para evitar el costo asociado)
+para poder asegurar que construimos sobre código sólido necesitamos tener:
+ pruebas unitarias
+ pruebas de aceptación
+
+En particular vamos a ver cómo lograr automatizar pruebas unitarias en Javascript y nombraremos un poco
+cómo hacerlo con pruebas de aceptación.
+
+
+
+#Javascript
+
+
 Javascript se ha convertido en un lenguaje muy importante a causa del desarrollo de los sitios web actuales
 
 -Sin embargo debido a diferentes motivos no cuenta con un conjunto de buenas herramientas.
@@ -8,70 +71,22 @@ problemas repetitivos y que en otras plataformas son más sencillos, como iterar 
 -También hay cosas como BackboneJs que solucionan problemas de arquitectura y de organización del código, en 
 lenguajes como .net tenemos una plataforma "oficial" como podría ser ASP.NET MVC, en Javascript esto no ocurre.
 
-A medida que las aplicaciones se fueron haciendo más y más complejas y los procesos de desarrollo se hacen más cortos.
-
-Porque los requermientos cambian rápido o no están del todo claro, o se van definiendo sobre la marcha.
-
-El ciclo:
-
-Requerimiento => desarrollo => despligue para prueba => prueba => ajustes (correcciones, cambios, etc) => comenzar de nuevo
-
-El tiempo de despliegue para dejar la aplicación lista para ser probada comienza a ser un limitante en nuestra velocidad.
-También los cambios van haciendo cada vez más complejo tener un buen conjunto de pruebas para validar nuestra aplicación.
 
 
-Si el equipo es más grande que pequeño poder detectar problemas con commits de código recientes es muy valioso 
-para poder "fallar rápido"
-
-La falsa sensación de avance cuando no hemos integrado es muy peligrosa. 
-
-Si trabajamos en este tipo de escenarios o similares con arquitecturas emergentes y muchos procesos de despliegue, una
-muy buena forma de mantener nuestro proyecto sano es liberar versiones de prueba lo antes posible,
-entonces necesitamos tener automatizado el despligue (para evitar el costo asociado)
-para poder asegurar que construimos sobre código sólido necesitamos tener:
-pruebas unitarias
-pruebas de aceptación
-
-En particular vamos a ver cómo lograr automatizar pruebas unitarias en Javascript y nombraremos un poco
-cómo hacerlo con pruebas de aceptación.
-
-
-
-
-
-
-
-
-
-
-la importancia de los ciclos cortos de desarrollo / despligue
-
-la necesidad de que eso no sea una carga de trabajo extra
-
-ejemplo de integración continua => moficiar correr test
-
-
-
-el ciclo => requrimientos
-priorización => sprint => desplique => prueba
-siempre lo último en CI
-integración continua
-cómo sabemos que nuestros últimos cambios no rompieron lo que ya había
-cómo sabemos que podemos cambiar algo que funcionaba y no romper un componente que depende de él
-
-
-qunit
+#qunit
 
 framework de jquery
 todo jquery está testeado con qunit
 no depende de jquery
 está desarrollado de cero para testear Javascript
 
+#blanket
+
 coverage (blanket)
 
 Es importante la covertura?
 
-phantomjs
+#phantomjs
 
 implementación de webkit standalone
 cómo correr los test de qunit en webkit
