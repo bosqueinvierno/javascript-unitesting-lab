@@ -14,11 +14,11 @@ Es un framework para unit testing en Javascript, desarrollado por la gente de jQ
 
 Para utilizar los ejemplos son necesarias algunas herramientas, en particular yo utilizo Notepad++ como editor. Más allá de esto vamos a necesitar:
 
-*Tortoise GIT (poner link)
+[Tortoise GIT](https://code.google.com/p/tortoisegit/)
 
-*Nodejs (poner link)
+[Nodejs](http://nodejs.org/)
 
-*PhantomJs (poner link) y colocarlo en el PATH (en Windows)
+[PhantomJs](http://nodejs.org/) y colocarlo en el PATH (en Windows)
 
 *Instalar el paquete de Nodejs UglifyJS2 `npm install uglify-js -g`
 
@@ -27,8 +27,8 @@ Para utilizar los ejemplos son necesarias algunas herramientas, en particular yo
 1. [Ejemplo1](https://github.com/leomicheloni/javascript-unitesting-lab/blob/master/ejemplos/ejemplo1.html). Cargar Qunit en el navegador.
 2. [Ejemplo2](https://github.com/leomicheloni/javascript-unitesting-lab/blob/master/ejemplos/ejemplo2.html). Test simple, sin código bajo prueba.
 3. [Ejemplo3](https://github.com/leomicheloni/javascript-unitesting-lab/blob/master/ejemplos/ejemplo3.html). Test simple, validando un resultado.
-4. [Ejemplo4](https://github.com/leomicheloni/javascript-unitesting-lab/blob/master/ejemplos/ejemplo4.html). Utilizando equal para comparar un resultado con un valor esperado.
-5. [Ejemplo5](https://github.com/leomicheloni/javascript-unitesting-lab/blob/master/ejemplos/ejemplo5.html). Agregar un mensaje para que se muestre en caso de error.
+4. [Ejemplo4](https://github.com/leomicheloni/javascript-unitesting-lab/blob/master/ejemplos/ejemplo4.html). Utilizando equal para comparar un resultado con un valor esperado. Y agregar un mensaje de error.
+5. [Ejemplo5](https://github.com/leomicheloni/javascript-unitesting-lab/blob/master/ejemplos/ejemplo5.html). Ejemplo de deepEqual.
 6. [Ejemplo6](https://github.com/leomicheloni/javascript-unitesting-lab/blob/master/ejemplos/ejemplo6.html). Ejemplo de notEqual.
 7. [Ejemplo7](https://github.com/leomicheloni/javascript-unitesting-lab/blob/master/ejemplos/ejemplo7.html). Ejemplo de manipular una excepción esperada.
 8. [Ejemplo8](https://github.com/leomicheloni/javascript-unitesting-lab/blob/master/ejemplos/ejemplo8.html). Uso de módulos.
@@ -39,7 +39,9 @@ Para utilizar los ejemplos son necesarias algunas herramientas, en particular yo
 13. [Ejemplo13](https://github.com/leomicheloni/javascript-unitesting-lab/blob/master/ejemplos/ejemplo13.js). Ejecutar los test y obtener la covertura de código.
 14. [Ejemplo14](https://github.com/leomicheloni/javascript-unitesting-lab/blob/master/ejemplos/ejemplo14.js). Integrar en el script de build el testing y la covertura de código.
 
+##Presentación
 
+Los slides de la presentación se hicieron con [Slippy](https://github.com/Seldaek/slippy) y se pueden [descargar desde acá](https://github.com/leomicheloni/javascript-unitesting-lab/blob/master/presentacion/main.html)
 
 
 
