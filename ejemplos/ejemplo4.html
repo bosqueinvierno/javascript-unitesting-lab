@@ -15,7 +15,16 @@
 
 		//la función equal compara dos resultados
 		//tiene la ventaja de dar más información que "ok" si falla
-		equal(resultado, 3);
+		equal(resultado, "5");
+	});	
+	
+	test("segundo test", function(){
+		var valor1 = 2;
+		var valor2 = 3;
+		var resultado = sumar(valor1, valor2);
+
+		//también podemos agregar un mensaje de error más descriptivo
+		equal(resultado, 3, "la función suma no funciona bien :( ");
 	});
 	
 	</script>

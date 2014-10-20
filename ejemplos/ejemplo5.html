@@ -7,17 +7,16 @@
 	sumar = function(a, b){
 		return a + b;
 	};
-	
+		
 	test("primer test", function(){
 		var valor1 = 2;
 		var valor2 = 3;
 		var resultado = sumar(valor1, valor2);
 
-
-		//también podemos agregar un mensaje de error más descriptivo
-		equal(resultado, 3, "la función suma no funciona bien :( ");
+		//la función deepEqual compara dos resultados de manera estricta
+		//es equivalente a ===
+		deepEqual(resultado, "5");
 	});
-	
 	</script>
 </head>
 <body>

@@ -1,7 +1,4 @@
-var system = require('system');
-
 var page = require('webpage').create();
-
 
 // page.open permite abrir una página
 page.open("ejemplo10.html", function(status){
