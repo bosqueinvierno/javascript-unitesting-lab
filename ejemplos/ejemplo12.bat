@@ -12,7 +12,7 @@ phantomjs ejemplos/ejemplo12.js ejemplos/ejemplo12.html
 IF NOT ERRORLEVEL 1 GOTO DONE
   ECHO  An error occurred with exit code 1 or higher.
   PAUSE
-  EXIT
+  EXIT 100
 :DONE
 
 REM minificar
