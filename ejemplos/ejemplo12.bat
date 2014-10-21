@@ -9,14 +9,14 @@ REM echo ejecutando tests
 phantomjs ejemplos/ejemplo12.js ejemplos/ejemplo12.html
 
 
-REM IF NOT ERRORLEVEL 1 GOTO DONE
-  REM ECHO  An error occurred with exit code 1 or higher.
-  REM PAUSE
-  REM EXIT
-REM :DONE
+IF NOT ERRORLEVEL 1 GOTO DONE
+  ECHO  An error occurred with exit code 1 or higher.
+  PAUSE
+  EXIT
+:DONE
 
-minificar
-copiar en carpeta de salida
+REM minificar
+REM copiar en carpeta de salida
 REM echo minificando...
-REM mkdir build
-REM uglifyjs ejemplo12.js -o build\package.js
+mkdir ejemplos/build
+rem uglifyjs ejemplos/ejemplo12.js -o ejemplos/build/package.js
