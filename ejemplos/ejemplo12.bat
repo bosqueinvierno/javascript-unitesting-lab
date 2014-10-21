@@ -18,5 +18,5 @@ IF NOT ERRORLEVEL 1 GOTO DONE
 REM minificar
 REM copiar en carpeta de salida
 REM echo minificando...
-mkdir /ejemplos/build
-rem uglifyjs ejemplos/ejemplo12.js -o ejemplos/build/package.js
+mkdir build
+uglifyjs ejemplos/ejemplo12.js -o build/package.js
