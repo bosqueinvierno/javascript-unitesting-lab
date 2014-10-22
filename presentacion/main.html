@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html" />
+        <!-- Slide meta data, remove/edit as you see fit -->
+        <title>Pruebas unitarias automatizadas en Javascript</title>
+        <!-- Slippy core file and dependencies -->
+        <script type="text/javascript" src="jquery.min.js"></script>
+        <script type="text/javascript" src="jquery.history.js"></script>
+        <script type="text/javascript" src="slippy.js"></script>
+        <!-- Slippy structural styles -->
+        <link type="text/css" rel="stylesheet" href="slippy.css"/>
+        <!-- Slippy theme -->
+        <link type="text/css" rel="stylesheet" href="slippy-dark.css"/>
+        <!-- Syntax highlighting core file  -->
+        <script type="text/javascript" src="highlighter/shCore.js"></script>
+        <!-- Syntax highlighting brushes, remove those you don't need -->
+        <script type="text/javascript" src="highlighter/shBrushBash.js"></script>
+        <script type="text/javascript" src="highlighter/shBrushCpp.js"></script>
+        <script type="text/javascript" src="highlighter/shBrushCSharp.js"></script>
+        <script type="text/javascript" src="highlighter/shBrushCss.js"></script>
+        <script type="text/javascript" src="highlighter/shBrushDelphi.js"></script>
+        <script type="text/javascript" src="highlighter/shBrushDiff.js"></script>
+        <script type="text/javascript" src="highlighter/shBrushGroovy.js"></script>
+        <script type="text/javascript" src="highlighter/shBrushJava.js"></script>
+        <script type="text/javascript" src="highlighter/shBrushJScript.js"></script>
+        <script type="text/javascript" src="highlighter/shBrushPhp.js"></script>
+        <script type="text/javascript" src="highlighter/shBrushPlain.js"></script>
+        <script type="text/javascript" src="highlighter/shBrushPython.js"></script>
+        <script type="text/javascript" src="highlighter/shBrushRuby.js"></script>
+        <script type="text/javascript" src="highlighter/shBrushScala.js"></script>
+        <script type="text/javascript" src="highlighter/shBrushSql.js"></script>
+        <script type="text/javascript" src="highlighter/shBrushVb.js"></script>
+        <script type="text/javascript" src="highlighter/shBrushXml.js"></script>
+        <!-- Syntax highlighting styles-->
+        <link type="text/css" rel="stylesheet" href="highlighter/shCore.css"/>
+        <link type="text/css" rel="stylesheet" href="highlighter/shThemeEclipse.css"/>
+        <!-- Slippy init code -->
+        <script type="text/javascript">
+            $(function() {
+                $(".slide").slippy({
+                    // settings go here
+                    // possible values are:
+                    //  - animLen, duration for default animations (0 = disabled)
+                    //  - animInForward, receives a slide and animates it
+                    //  - animInRewind, receives a slide and animates it
+                    //  - animOutForward, receives a slide and animates it
+                    //  - animOutRewind, receives a slide and animates it
+                    //  - baseWidth, defines the base for img resizing, if you don't want only
+                    //    full-width images, specify this as the pixel width of a slide so that
+                    //    images are scaled properly (default is 620px wide)
+                    //  - ratio, defines the width/height ratio of the slides, defaults to 1.3 (620x476)
+                    //  - margin, the fraction of screen to use as slide margin, defaults to 0.15
+                });
+                SyntaxHighlighter.all();
+            });
+        </script>
+        <!-- Custom style for this deck -->
+        <style type="text/css">
+            .slide.nofooter {
+                border: 0;
+                background: 0;
+            }
+			.slide.nofooter .footer {
+				display: none;
+            }
+        </style>
+    </head>
+    <body>
+		<div class="slide nofooter">
+			<div class="">
+				<img src="img/SGVirtual7-inicio.png"/>
+			</div>
+		
+        </div>
+
+        <div class="slide">
+			<h1>Acerca de mí:</h1>
+            <div >
+				<ul style="list-style-type: none">
+				<li><br/></li>
+				<li><a href="http://www.leonardomicheloni.com">Leonardo Micheloni</a></li>
+				<li><br/></li>
+				<li><a href="http://twitter.com/leomicheloni">@leomicheloni</a></li>
+				<li><br/></li>
+				<li><a href="http://kinetica-solutions.com">Kinetica Solutions</a></li>
+				<li><br/></li>
+				<li><a href="https://github.com/leomicheloni">Git Hub</a></li>
+				</ul>
+
+            </div>
+        </div>
+
+        <div class="slide">
+			<h1>Aplicaciones modernas</h1>
+			
+			<p><br /></p>
+			<p>Se fueron haciendo cada vez más complejas</p>
+			<p>Los requirimientos cambiand rápido o no siempre están del todo definidos</p>
+			<p>Necesitamos ciclos de desarrollo cortos y buena respuesta al cambio</p>
+			<p>Arquitectura emergente</p>
+        </div>
+
+        <div class="slide">
+			<h1>El ciclo de desarrollo</h1>			
+			<p><br /></p>
+			<img class="hcenter" src="img/cicle.png" alt="" />
+		</div>
+
+        <div class="slide">
+            <h1>Calidad</h1>
+			<h2>Nuevas necesidades</h2>
+            <p></p>
+			<p>Asegurar la calidad y la integridad</p>
+			<p>Responder rápidamente a los cambios</p>
+			<p>Fallar rápido</p>
+        </div>
+
+        <div class="slide">
+			<h1>¿Qué hacemos en estos casos?</h1>
+            <p></p>
+			<p>Test Unitarios</p>
+			<p>Integración continua</p>
+			<p>Despliegue continuo</p>
+        </div>
+
+        <div class="slide">
+            <h1>Javascript</h1>
+			<h2>Un poco de contexto</h2>
+			<p><br /></p>
+			<p>En los útimos años se ha convertido en un lenguaje muy importante</p>
+			<p>Sin embargo debido a diferentes motivos no cuenta con un conjunto de buenas herramientas "out of the box"</p>
+            <p>Lo que ha ido pasando es que se fueron generando herramientras a partir de la aparición de necesidades.</p>
+        </div>
+
+        <div class="slide">
+            <h1>Javascript</h1>
+			<h2>Herramientas</h2>
+			<p><br /></p>
+			<ul>
+			<li>Qunit</li>
+			<li>Blanket</li>
+			<li>Phantom</li>
+			<li>Nodejs</li>
+			
+			</ul>
+        </div>
+
+		<div class="slide">
+			<h1><a target="_blank" href="http://qunitjs.com/">Qunit</a></h1>
+			<p><br /></p>
+			<ul>
+			<li>Desarrollado por el equipo de jQuery</li>
+			<li>Todo jQuery está testeado con Qunit</li>
+			<li>Qunit <a target="_blank"  href="https://github.com/jquery/qunit/tree/master/test"> está testeado</a> con Qunit</li>
+			<li>No depende de jQuery</li>
+			<li>Está pensado desde cero para testear Javascript</li>
+			
+			</ul>
+        </div>
+
+		<div class="slide">
+			<h1><a target="_blank" href="https://github.com/alex-seville/blanket">Blanket</a></h1>
+			<p><br /></p>
+			<ul>
+			<li>Code coverage</li>
+			<li>Funciona por instrumentación</li>
+			<li>Funciona con Qunit y con otros frameworks como Jazmine y Mocha</li>		
+			</ul>
+        </div>
+
+		<div class="slide">
+			<h1><a target="_blank" href="https://github.com/alex-seville/blanket">PhantomJs</a></h1>
+			<p><br /></p>
+			<ul>
+			<li>Implementación de WebKit standalone (Headless browser)</li>
+			<li>Posee una API para controlar su comportamiento</li>
+			<li>Se comando con Javascript</li>		
+			<li>Permite hacer capturas de pantalla, análisis de tráfico</li>		
+			<li>Automatización</li>		
+			</ul>
+        </div>
+
+        <div class="slide">
+		<div class="vcenter">
+		<h1 class="hcenter">Empecemos</h1>
+		</div>
+        </div>
+
+		<div class="slide nofooter">
+			<div class="">
+				<img src="img/SGVirtual7-cierre.png"/>
+			</div>		
+        </div>
+				
+        <div class="layout" data-name="default">
+            <content></content>
+            <div class="footer">
+				<span class="left">Leonardo Micheloni</span>
+				<span class="right">Twitter <a href="http://twitter.com/leomicheloni">@leomicheloni </a></span>
+                <hr class="defloat" />
+            </div>
+        </div>
+
+        <div class="layout nofooter" data-name="alt">
+            <content></content>
+        </div>
+    </body>
+</html>
