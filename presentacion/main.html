@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+        <meta http-equiv="Content-Type" content="text/html" />
         <!-- Slide meta data, remove/edit as you see fit -->
         <title>Pruebas unitarias automatizadas en Javascript</title>
         <!-- Slippy core file and dependencies -->
@@ -61,15 +61,17 @@
                 border: 0;
                 background: 0;
             }
+			.slide.nofooter .footer {
+				display: none;
+            }
         </style>
     </head>
     <body>
-		<div class="slide">
-            <br/>
-			<br/><br/><br/><br/><br/>
-			<h1>Pruebas unitarias automatizadas en Javascript</h1>
-            <h2></h2>
-
+		<div class="slide nofooter">
+			<div class="">
+				<img src="img/SGVirtual7-inicio.png"/>
+			</div>
+		
         </div>
 
         <div class="slide">
@@ -185,50 +187,12 @@
 		</div>
         </div>
 
+		<div class="slide nofooter">
+			<div class="">
+				<img src="img/SGVirtual7-cierre.png"/>
+			</div>		
+        </div>
 				
-<!--
-        <div class="slide">
-            <h1>Syntax Highlighting</h1>
-            <p>Code is just pre tags with class="brush: &lt;language&gt;"</p>
-            <p>The eval class combined with the js brush makes that Execute link appear on the right</p>
-            <pre class="brush: js eval">
-                // in eval'd block, slide is the current slide
-                $(slide).css('background', '#533');
-                // and node is the code block
-                $(node).css('opacity', '.1');
-            </pre>
-            <p>Nifty feature for JS devs doing presentations</p>
-            <br />
-            <p>Also if you use alert() in your code, it's piped into those nicer boxes</p>
-            <pre class="brush: js eval">
-                alert('test');
-            </pre>
-            <p>This is really great to provide interaction during a presentation</p>
-        </div>
-
-        <div class="slide">
-            <h1>Syntax Highlighting</h1>
-
-            <pre class="brush: php">
-                function foo($var) {
-                    // this is some php code as an example
-                    $foo = new Class("meh");
-                    $foo->bar();
-                }
-            </pre>
-        </div>
-
-        <div class="slide">
-            <h1>Incremental Slides</h1>
-            <p>Hit next</p>
-            <p class="incremental">Every "next slide" action builds up the slide</p>
-            <p class="incremental">element..</p>
-            <p class="incremental">by..</p>
-            <p class="incremental">element.</p>
-            <p class="incremental">For every element that has the incremental class on the slide.</p>
-            <p class="incremental">That's it for now, enjoy!</p>
-        </div>
--->
         <div class="layout" data-name="default">
             <content></content>
             <div class="footer">
